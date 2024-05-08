@@ -1,0 +1,11 @@
+#grid-div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+    max-width: 16cm;
+}
+
+.divClassName {
+    border: 1px solid black;
+}
