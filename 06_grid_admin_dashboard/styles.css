@@ -1,0 +1,58 @@
+:root {
+  --sidebar-color: rgb(25, 146, 212);
+  --content-color: rgb(226, 232, 240);
+}
+
+body {
+  display: grid;
+  grid-template: 1fr 8fr / 1fr 8fr;
+}
+
+/* HEADER */
+
+#header {
+  background-color: white;
+
+  grid-row: 1 / 2;
+
+  display: grid;
+  grid-template: 1fr 1.5fr / auto;
+}
+
+/* SIDEBAR */
+
+#sidebar {
+  background-color: var(--sidebar-color);
+  padding: 1rem;
+
+  grid-row: 1 / 3;
+
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-auto-rows: auto;
+  align-content: center;
+  align-items: center;
+}
+
+#sidebar > * {
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#sidebar > img {
+  height: 25px;
+  filter: invert(100%);
+  padding: 10px;
+}
+
+#dashboard-logo {
+  height: 35px !important;
+}
+
+/* CONTENT */
+
+#content {
+  background-color: var(--content-color);
+
+  grid-row: 2 / 3;
+}
