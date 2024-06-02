@@ -3,50 +3,264 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Form</title>
+    <title>Admin Dashboard</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="main.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- SIDEBAR -->
     <div id="sidebar">
-      <img src="media/sidebar/dashboard-logo.svg" id="dashboard-logo" />
+      <img
+        height="35px"
+        src="media/sidebar/dashboard-logo.svg"
+        id="dashboard-logo"
+      />
       <h1>Dashboard</h1>
 
-      <img src="media/sidebar/home.svg" />
+      <img height="25px" src="media/sidebar/home.svg" />
       <p>Home</p>
-      <img src="media/sidebar/profile.svg" />
+      <img height="25px" src="media/sidebar/profile.svg" />
       <p>Profile</p>
-      <img src="media/sidebar/message.svg" />
+      <img height="25px" src="media/sidebar/message.svg" />
       <p>Messages</p>
-      <img src="media/sidebar/history.svg" />
+      <img height="25px" src="media/sidebar/history.svg" />
       <p>History</p>
-      <img src="media/sidebar/tasks.svg" />
+      <img height="25px" src="media/sidebar/tasks.svg" />
       <p>Tasks</p>
-      <img src="media/sidebar/communities.svg" />
+      <img height="25px" src="media/sidebar/communities.svg" />
       <p>Communities</p>
-      <img />
+      <img height="25px" />
       <p></p>
-      <img src="media/sidebar/settings.svg" />
+      <img height="25px" src="media/sidebar/settings.svg" />
       <p>Settings</p>
-      <img src="media/sidebar/support.svg" />
+      <img height="25px" src="media/sidebar/support.svg" />
       <p>Support</p>
-      <img src="media/sidebar/privacy.svg" />
+      <img height="25px" src="media/sidebar/privacy.svg" />
       <p>Privacy</p>
     </div>
 
     <!-- HEADER -->
     <div id="header">
       <div id="header-top">
-        <button></button>
+        <form>
+          <button id="search-button">
+            <img src="media/header/search.svg" height="25px" />
+          </button>
+          <input type="text" id="search-bar" />
+        </form>
+        <button id="notifications-button">
+          <img src="media/header/notification.svg" height="25px" />
+        </button>
+
+        <button id="user-profile-button">
+          <img
+            src="media/profile_pics/profile-luffy.jpeg"
+            class="profile-pic"
+            height="30px"
+          />
+        </button>
+        <p>Strawhat Luffy</p>
       </div>
       <div id="header-bottom">
-
+        <img
+          src="media/profile_pics/profile-luffy.jpeg"
+          height="50px"
+          class="profile-pic"
+        />
+        <div>
+          <p style="font-size: 0.8rem">Hi there,</p>
+          <p>Strawhat Luffy (@pirateKing)</p>
+        </div>
+        <button>New</button>
+        <button>Upload</button>
+        <button>Share</button>
       </div>
-     
     </div>
 
     <!-- CONTENT -->
-    <div id="content">CONTENT</div>
+    <div id="content">
+      <div id="projects">
+        <div class="projects-title">Your projects</div>
+
+        <div id="projects-grid">
+          <div>
+            <span>
+              <h2>Super Cool Project</h2>
+              <p class="paragraph">
+                Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin
+                nibh erat, id facilisis felis accumsan nec.
+              </p>
+            </span>
+            <div class="share-icon">
+              <img src="media/content/star.svg" height="20px" />
+              <img src="media/content/eye.svg" height="20px" />
+              <img src="media/content/share.svg" height="20px" />
+            </div>
+          </div>
+          <div>
+            <span>
+              <h2>Less Cool Project</h2>
+              <p class="paragraph">
+                Nullam condimentum ipsum ut lectus vehicula consectetur. Quisque
+                sed dolor tincidunt, consectetur sapien et, facilisis dolor.
+                Duis sem purus, dignissim ut sapien in, varius pellentesque
+                lacus.
+              </p>
+            </span>
+            <span class="share-icon">
+              <div class="share-icon">
+                <img src="media/content/star.svg" height="20px" />
+                <img src="media/content/eye.svg" height="20px" />
+                <img src="media/content/share.svg" height="20px" />
+              </div>
+            </span>
+          </div>
+          <div>
+            <span>
+              <h2>Impossible App</h2>
+              <p class="paragraph">
+                In hac habitasse platea dictumst. Vivamus dictum rutrum arcu, a
+                placerat velit sagittis id.
+              </p>
+            </span>
+            <span class="share-icon">
+              <div class="share-icon">
+                <img src="media/content/star.svg" height="20px" />
+                <img src="media/content/eye.svg" height="20px" />
+                <img src="media/content/share.svg" height="20px" />
+              </div>
+            </span>
+          </div>
+          <div>
+            <span>
+              <h2>Easy Peasy App</h2>
+              <p class="paragraph">
+                Etiam cursus eros ac efficitur fringilla. Vestibulum dignissim
+                urna eget accumsan aliquam. Curabitur dignissim nisi in tortor
+                commodo, ac bibendum magna tincidunt.
+              </p>
+            </span>
+            <span class="share-icon">
+              <div class="share-icon">
+                <img src="media/content/star.svg" height="20px" />
+                <img src="media/content/eye.svg" height="20px" />
+                <img src="media/content/share.svg" height="20px" />
+              </div>
+            </span>
+          </div>
+          <div>
+            <span>
+              <h2>Ad Blocker</h2>
+              <p class="paragraph">
+                Quisque eget rutrum nisl. Nam augue justo, cursus vitae metus
+                vel, pharetra hendrerit felis. Aliquam sed malesuada eros.
+              </p>
+            </span>
+            <span class="share-icon">
+              <div class="share-icon">
+                <img src="media/content/star.svg" height="20px" />
+                <img src="media/content/eye.svg" height="20px" />
+                <img src="media/content/share.svg" height="20px" />
+              </div>
+            </span>
+          </div>
+          <div>
+            <span>
+              <h2>Money Maker</h2>
+              <p class="paragraph">
+                Praesent convallis, libero quis congue elementum, nunc ante
+                faucibus sapien, ac scelerisque tortor purus sit amet ex.
+                Pellentesque mollis nec sem vel aliquam.
+              </p>
+            </span>
+            <span class="share-icon">
+              <div class="share-icon">
+                <img src="media/content/star.svg" height="20px" />
+                <img src="media/content/eye.svg" height="20px" />
+                <img src="media/content/share.svg" height="20px" />
+              </div>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div id="announcements">
+        <div class="projects-title">Announcements</div>
+
+        <div id="announcements-grid">
+          <span>
+            <h2>Site Maintenance</h2>
+            <p class="paragraph">
+              Vestibulum condimentum tellus lacus, in accumsan elit maximus ac.
+              Donec hendrerit sodales congue...
+            </p>
+          </span>
+          <hr />
+          <span>
+            <h2>Community Share Day</h2>
+            <p class="paragraph">
+              Nam vel lectus tincidunt, rutrum nulla eu, ornare libero. Aliquam
+              dictum accumsan porttitor...
+            </p>
+          </span>
+          <hr />
+          <span>
+            <h2>Updated Privacy Policy</h2>
+            <p class="paragraph">
+              Phasellus efficitur nisi eget elit consectetur, eget condimentum
+              ante auctor. Cras fringilla sagittis sem in mattis...
+            </p>
+          </span>
+        </div>
+      </div>
+
+      <div id="trending">
+        <div class="projects-title">Trending</div>
+        <div id="trending-grid">
+          <div class="trending-user">
+            <img
+              src="media/profile_pics/profile-luffy.jpeg"
+              class="profile-pic"
+              height="35px"
+            />
+            <p class="handler">@pirateKing</p>
+            <p class="phrase">Meeat...</p>
+          </div>
+          <div class="trending-user">
+            <img
+              src="media/profile_pics/profile-ace.jpeg"
+              class="profile-pic"
+              height="35px"
+            />
+            <p class="handler">@fireAce</p>
+            <p class="phrase">Hiken</p>
+          </div>
+          <div class="trending-user">
+            <img
+              src="media/profile_pics/profile-zoro.jpeg"
+              class="profile-pic"
+              height="35px"
+            />
+            <p class="handler">@pirateHunter</p>
+            <p class="phrase">Where am I?</p>
+          </div>
+          <div class="trending-user">
+            <img
+              src="media/profile_pics/profile-sanji.jpeg"
+              class="profile-pic"
+              height="35px"
+            />
+            <p class="handler">@blackLeg</p>
+            <p class="phrase">Cooking.</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
