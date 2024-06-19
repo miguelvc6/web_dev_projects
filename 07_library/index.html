@@ -7,9 +7,30 @@
     <title>Library</title>
     <link rel="stylesheet" href="styles.css">
     <script src="main.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <div id="header">&#x262C The Lost Library &#x262C</div>
+    <div id="book-display">
+    </div>
+    <div id="input-bar">
+        <form id="form">
+            <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" name="title" id="title" value="">
+                <label for="author">Author</label>
+                <input type="text" name="author" id="author">
+                <label for="pages">Pages</label>
+                <input type="number" name="pages" id="pages">
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit-button">NEW BOOK</button>
+            </div>
+        </form>
+    </div>
 </body>
 
 </html>
