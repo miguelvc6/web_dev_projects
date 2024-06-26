@@ -13,6 +13,50 @@
 </head>
 
 <body>
+    <div id="header">
+        Tic - Tac - Toe
+    </div>
+    <div id="main">
+        <div id="board">
+            <div id="position_0" class="position" data-index="0"><img height="60"></div>
+            <div id="position_1" class="position" data-index="1"><img height="60"></div>
+            <div id="position_2" class="position" data-index="2"><img height="60"></div>
+            <div id="position_3" class="position" data-index="3"><img height="60"></div>
+            <div id="position_4" class="position" data-index="4"><img height="60"></div>
+            <div id="position_5" class="position" data-index="5"><img height="60"></div>
+            <div id="position_6" class="position" data-index="6"><img height="60"></div>
+            <div id="position_7" class="position" data-index="7"><img height="60"></div>
+            <div id="position_8" class="position" data-index="8"><img height="60"></div>
+        </div>
+        <div id="right">
+            <div id="new_game">
+                <form>
+                    <ul>
+                        <li>
+                            <label for="player1">Player 1:</label><br>
+                        </li>
+                        <li>
+                            <input type="text" id="player1" name="player1" value="John">
+                        </li>
+                        <li>
+                            <label for="player2">Player 2:</label><br>
+                        </li>
+                        <li>
+                            <input type="text" id="player2" name="player2" value="Doe">
+                        </li>
+                        <li>
+                            <input type="submit" value="NEW GAME"></label><br>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+            <div id="score_display">
+                <h3>Scores</h3>
+                <p id="player1_score"></p>
+                <p id="player2_score"></p>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

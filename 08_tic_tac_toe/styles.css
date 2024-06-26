@@ -4,9 +4,128 @@
     font-weight: 400;
     font-style: normal;
 
-    --color-dblue: #244855;
-    --color-lblue: #90AEAD;
-    --color-beige: #FBE9D0;
-    --color-orange: #E64833;
-    --color-brown: #874F41;
+    --color-blue: #00FFFF;
+    --color-purple: #AF47D2;
+    --color-orange: #FF8F00;
+    --color-yellow: #FFDB00;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 2rem;
+    font-size: 3rem;
+    padding: 2rem;
+    background-color: var(--color-purple);
+    color: var(--color-orange);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+#main {
+    background-color: var(--color-orange);
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 2mm;
+    padding: 2rem;
+    width: 60%;
+    height: 60%;
+    border: 2px solid var(--color-purple);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.position {
+    background-color: var(--color-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    color: var(--color-yellow);
+    border: 2px solid var(--color-purple);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.position:hover {
+    background-color: var(--color-purple);
+}
+
+#right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    gap: 2rem;
+}
+
+#new_game form ul {
+    list-style: none;
+    padding: 0;
+}
+
+#new_game form li {
+    margin-bottom: 1rem;
+}
+
+#new_game label {
+    font-size: 1.2rem;
+    color: var(--color-blue);
+}
+
+
+#new_game label {
+    font-size: 1.2rem;
+    color: var(--color-blue);
+}
+
+
+#new_game input[type="submit"] {
+    width: 100%;
+    padding: 0.7rem;
+    font-size: 1.2rem;
+    color: var(--color-light-yellow);
+    background-color: var(--color-blue);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#new_game input[type="submit"]:hover {
+    background-color: var(--color-purple);
+}
+
+#score_display {
+    background-color: var(--color-light-yellow);
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid var(--color-purple);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--color-blue);
 }
