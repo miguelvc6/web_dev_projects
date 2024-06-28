@@ -1,0 +1,30 @@
+:root {
+  --light-blue: #66bfbf;
+  --light-gray: #eaf6f6;
+  --white: #fcfefe;
+  --pink: #f76b8a;
+}
+
+body {
+  font-family: Garamond, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffe4b5;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+#side-bar {
+  flex-basis: 15%;
+  background-color: var(--light-blue);
+  height: 100%;
+}
+
+#display {
+  flex-basis: 85%;
+  background-color: var(--white);
+  height: 100%;
+}
