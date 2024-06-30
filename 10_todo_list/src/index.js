@@ -84,7 +84,6 @@ const task8 = new TodoItem(
 projectD.addTodoItem(task7);
 projectD.addTodoItem(task8);
 
-
 newProjectButton.addEventListener("click", () => {
   const projectForm = createProject(document);
 
@@ -106,17 +105,13 @@ newProjectButton.addEventListener("click", () => {
 
     console.log(projectData);
     const newProject = new Project(...Object.values(projectData));
-
+    console.log(newProject);
     console.log(Category.getAllCategories());
     displaySidebar(document);
     displayInit(document);
   });
 });
 
-
 displaySidebar(document);
 displayInit(document);
 // displayProject(document, projectA);
-
-
-
