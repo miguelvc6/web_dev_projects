@@ -28,7 +28,7 @@ function displaySidebar(document) {
       projectButton.classList.add("project-button");
       projectButton.textContent = project.title;
 
-      projectButton.addEventListener("click", (e) => {
+      projectButton.addEventListener("click", () => {
         displayProject(document, project);
       });
 
