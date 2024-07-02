@@ -8,5 +8,43 @@
     <script src="main.js" defer></script>
   </head>
 
-  <body></body>
+  <body>
+    <h1>Weather API</h1>
+    <form id="form">
+      <fieldset id="form-main">
+        <legend>Choose your query type</legend>
+
+        <label for="location">Location</label>
+        <input type="text" id="location" name="location" value="London" /><br />
+        <input type="radio" id="current" name="type" value="current" checked/>
+        <label for="current">Current Weather</label><br />
+        <input type="radio" id="forecast" name="type" value="forecast" />
+        <label for="forecast">Forecast</label><br />
+      </fieldset>
+      <fieldset id="form-current">
+        <legend>Additional options</legend>
+
+        <label for="aqi">Get Air Quality: </label>
+        <input type="checkbox" id="current-aqi" name="aqi" /><br />
+      </fieldset>
+      <fieldset id="form-forecast">
+        <legend>Additional options</legend>
+
+        <label for="forecast-days">Days: </label>
+        <input type="text" id="forecast-days" name="days" value="1" /><br />
+        <label for="forecast-aqi">Get Air Quality: </label>
+        <input type="checkbox" id="forecastaqi" name="forecast-aqi" /><br />
+        <label for="alert">Get Weather Alert: </label>
+        <input type="checkbox" id="alert" name="alert" /><br />
+      </fieldset>
+
+      <input type="submit" value="Submit" id="form-submit">
+    </form>
+
+    <hr>
+    <div>
+      Response:
+      <p id="response"></p>
+    </div>
+  </body>
 </html>

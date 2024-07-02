@@ -1,7 +1,120 @@
 :root {
-    font-family: "Oswald", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  --primary-color: #000;
+  --secondary-color: #fff;
+  --background-color: #f4f4f4;
+  --input-border-color: #ccc;
+  --input-focus-border-color: #007bff;
+  --legend-background-color: var(--primary-color);
+  --legend-text-color: var(--secondary-color);
+  --fieldset-padding: 1rem;
+  --fieldset-margin: 1rem 0;
+  --input-margin: 0.5rem 0;
+  --submit-button-background: var(--primary-color);
+  --submit-button-color: var(--secondary-color);
+}
+
+body {
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 2rem;
+  transition: background 0.5s ease;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: var(--secondary-color);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+  padding: var(--fieldset-padding);
+  margin: var(--fieldset-margin);
+  border: 1px solid var(--input-border-color);
+  border-radius: 4px;
+}
+
+legend {
+  background-color: var(--legend-background-color);
+  color: var(--legend-text-color);
+  padding: 3px 6px;
+  border-radius: 4px;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="radio"],
+input[type="checkbox"] {
+  margin: var(--input-margin);
+}
+
+input[type="text"] {
+  width: calc(100% - 1rem);
+  padding: 0.5rem;
+  border: 1px solid var(--input-border-color);
+  border-radius: 4px;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: var(--input-focus-border-color);
+  outline: none;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 1rem;
+  background-color: var(--submit-button-background);
+  color: var(--submit-button-color);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #333;
+}
+
+hr {
+  margin: 2rem 0;
+  border: none;
+  border-top: 1px solid var(--input-border-color);
+}
+
+div {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: var(--secondary-color);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#response {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--primary-color);
+  white-space: pre-wrap;
 }
 
