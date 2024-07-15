@@ -1,0 +1,12 @@
+{
+  "name": "12_battleship",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "watch": "jest --watchAll *.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
